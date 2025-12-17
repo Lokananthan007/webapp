@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import "../styles/Password.css";
 
-const API_URL = process.env.REACT_APP_API_URL;
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_URL = process.env.REACT_APP_API_URL || "";
+const API_KEY = process.env.REACT_APP_API_KEY || "";
 
 export default function Password() {
   const [mobile, setMobile] = useState("");
@@ -12,6 +12,11 @@ export default function Password() {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleChangePassword = async () => {
+    if (!mobile || !oldPassword || !newPassword || !confirmPassword) {
+      alert("Please fill all fields");
+      return;
+    }
+
     if (newPassword !== confirmPassword) {
       alert("New password and confirm password do not match");
       return;
@@ -21,13 +26,17 @@ export default function Password() {
       const token = localStorage.getItem("userToken");
 
       if (!token) {
-        alert("No token found. Please log in again.");
+        alert("Please login again");
         return;
       }
 
       const res = await axios.put(
         `${API_URL}/api/users/change-password`,
-        { mobile, oldPassword, newPassword },
+        {
+          mobile,
+          oldPassword,
+          newPassword,
+        },
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -36,15 +45,15 @@ export default function Password() {
         }
       );
 
-      alert(res.data.message || "Password changed successfully");
+      alert(res.data?.message || "Password changed successfully");
 
       setMobile("");
       setOldPassword("");
       setNewPassword("");
       setConfirmPassword("");
-    } catch (err) {
-      console.error("Change password error:", err.response?.data || err.message);
-      alert(err.response?.data?.message || "Failed to change password");
+    } catch (error) {
+      console.error(error);
+      alert(error.response?.data?.message || "Something went wrong");
     }
   };
 
@@ -55,6 +64,7 @@ export default function Password() {
 
         <input
           className="input"
+          type="text"
           placeholder="Mobile Number"
           value={mobile}
           onChange={(e) => setMobile(e.target.value)}

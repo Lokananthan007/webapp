@@ -128,7 +128,7 @@ export default function MyAccount() {
 
         <button
           className="option-btn"
-          onClick={() => navigate("/security")}
+          onClick={() => navigate("/password")}
         >
           Security Manager
         </button>
