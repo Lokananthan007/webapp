@@ -1,0 +1,147 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(#ff96ff, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.header-icon {
+  cursor: pointer;
+  color: #000;
+}
+
+/* Banner */
+.img-container {
+  margin-top: 90px;
+  width: 300px;
+  height: 180px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.3);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Icon Buttons */
+.icon-header {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 20px !important;
+  margin-right: 20px !important;
+}
+
+.icon-button {
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.icon-text {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Special Plan Card */
+.special-plan {
+  margin-top: 25px;
+  margin-bottom: 100px !important;
+  width: 90% !important;
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
+}
+
+.plan-header-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.plan-header-text,
+.price-tag {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.plan-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.info-box {
+  text-align: center;
+}
+
+.info-label {
+  font-size: 14px;
+  color: #777;
+}
+
+.info-value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #9d87f5;
+}
+
+/* BUY Button */
+.buy-button {
+  width: 100%;
+  background: #a3ffc8;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}

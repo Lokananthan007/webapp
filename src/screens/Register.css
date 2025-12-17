@@ -1,0 +1,112 @@
+.register-wrapper {
+  min-height: 100vh;
+  background: #ff96ff; /* same as RN colors.dark */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  width: 100%;
+  max-width: 380px;
+  background: #fff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #9d87f5;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #9d87f5;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+}
+
+/* Password Container */
+.password-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #9d87f5;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.password-input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+
+.eye-icon {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Alerts */
+.alert {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.alert.success {
+  background: #d4edda;
+  color: #28a745;
+  border: 1px solid #28a745;
+}
+
+.alert.error {
+  background: #f8d7da;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+/* Button */
+.button {
+  width: 100%;
+  background: #9d87f5;
+  color: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background: #8572db;
+}
+
+/* Link */
+.link {
+  margin-top: 10px;
+  color: #9d87f5;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+}

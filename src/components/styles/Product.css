@@ -1,0 +1,79 @@
+.gradient-bg {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #000000, #ffffff);
+  padding: 20px;
+}
+
+.scroll-container {
+  padding-bottom: 30px;
+}
+
+.special-plan {
+  width: 80% !important;
+  background: #fff;
+  margin: 30px auto;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.header-text,
+.price-tag {
+  font-size: 14px;
+  background: #291528;
+  color: white;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.plan-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: black;
+}
+
+.info-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.info-box {
+  text-align: center;
+}
+
+.info-label {
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.info-value {
+  color: #291528;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.buy-btn {
+  width: 100%;
+  background: #291528;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buy-btn:hover {
+  opacity: 0.9;
+}

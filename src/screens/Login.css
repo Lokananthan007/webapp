@@ -1,0 +1,92 @@
+/* MAIN CONTAINER */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff96ff; /* dark */
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  width: 100%;
+  max-width: 360px;
+  background: #ffffff; /* white */
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.2);
+}
+
+/* TITLE */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #291528;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* INPUTS */
+.input {
+  width: 90% !important;
+  padding: 13px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 2px solid #9d87f5; /* primary */
+  outline: none;
+  font-size: 16px;
+  background: #ffffffa0; /* secondary */
+}
+
+/* PASSWORD FIELD */
+.password-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #9d87f5;
+  border-radius: 12px;
+  background: #ffffffa0;
+}
+
+.password-input {
+  flex: 1;
+  padding: 13px;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.eye-icon {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* BUTTON */
+.button {
+  width: 100%;
+  background: #9d87f5; /* primary */
+  color: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background: #7a68d9;
+}
+
+/* LINK */
+.link {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #291528;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
